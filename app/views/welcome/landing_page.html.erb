@@ -1,0 +1,37 @@
+<style>
+	#page {
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%; height: 100%;
+		background-color: #212121;
+		display: block;
+	}
+
+	.page-container {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		top: 20vh;
+		display: block;
+		width: 40vh;
+	}
+
+	#logo {
+		width: 40vh;
+		margin: auto;
+	}
+
+	#button-go {
+		display: block;
+		width: 100px;
+		margin: auto;
+		margin-top: 20vh;
+	}
+</style>
+
+<section id="page">
+	<div class="page-container">
+		<img src="<%= asset_path 'kitsune_logo.png' %>" id="logo" />
+		<a id="button-go" class="button button-border-primary button-rounded">Go</a>
+	</div>
+</section>

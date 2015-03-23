@@ -1,0 +1,64 @@
+/*
+ *= require fontawesome
+ *= require_tree .
+ *= require_self
+ */
+
+
+/***************
+	Fonts
+		Open Sans
+		Roboto
+****************/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Roboto:400,100,300,500,700,900);
+
+
+/***************
+	Imports
+		Bootstrap-sass-overrides file to override variables from default bootstrap.
+		The upcoming two bootstrap includes are required as mentioned in github of
+		bootstrap-sass.
+****************/
+@import "bootstrap-sass-overrides";
+@import "bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
+@import "Buttons/css/buttons";
+
+
+/***************
+	Shared Styles
+****************/
+body {
+	font-family: 'Open Sans';
+}
+
+
+/***************
+	Containers
+		.container-default, slight margin of top
+****************/
+.container-default, .container-default-hm {
+	@include make-lg-column(8);
+	@include make-md-column(8);
+	@include container-fixed();
+	float: none !important;
+	margin-top: 10vh;
+}
+
+//height small
+.container-default-hs {
+	@extend .container-default;
+	margin-top: 3vh;
+}
+
+//height large
+.container-default-hl {
+	@extend .container-default;
+	margin-top: 20vh;
+}
+
+//height large
+.container-default-xl {
+	@extend .container-default;
+	margin-top: 30vh;
+}

@@ -1,0 +1,10 @@
+{
+  "name": "dsl-generated dependencies",
+  "dependencies": {
+    "fontawesome": "latest",
+    "bootstrap-sass": "latest",
+    "Buttons": "latest",
+    "colors": "latest",
+    "material-colors": "latest"
+  }
+}

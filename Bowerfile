@@ -1,0 +1,18 @@
+# A sample Bowerfile
+# Check out https://github.com/42dev/bower-rails#ruby-dsl-configuration for more options
+
+
+asset 'fontawesome'
+asset 'bootstrap-sass'
+asset 'Buttons'
+asset 'colors'
+asset 'material-colors'
+
+
+#asset 'bootstrap'
+#asset 'moment'
+#asset 'animate.css'
+#asset 'underscore'
+#asset 'normalize.css'
+#asset 'typehead.js'
+#asset 'sweetalert'
